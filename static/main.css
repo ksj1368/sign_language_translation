@@ -1,0 +1,285 @@
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color:rgba(0, 0, 0, .1);
+  /* background-color: #40414F; */
+}
+html {
+  height: -webkit-fill-available;
+}
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+
+/* 1. sidebar */
+/* sidebar 컬러 */
+.text-bg-dark {
+  color: #fff!important;
+  background-color: #202123!important;
+}
+/* sidebar 목차 */
+.nav-pills:hover .nav-link.active:hover, .nav-pills:hover .show>.nav-link:hover{
+  background-color: rgb(15, 98, 98);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(—bs-nav-pills-link-active-color);
+  background-color: rgb(51 153 153);
+}
+/* sidebar 하단 */
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+/* toggle */
+.dropdown-toggle { 
+  outline: 0; 
+}
+
+
+
+/* 2. Home */
+/* content center */
+.content{
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+/* title */
+.content>#welcome{
+  font-size: 50px;
+  color: black;
+  /* color: #ECECF1; */
+}
+/* explain */
+.content>#explain{
+  font-size: medium;
+  margin-top: 50px;
+  color: black;
+  /* color: white; */
+}
+a {
+  text-decoration-line: none;
+  text-decoration:none;
+  color: #ECECF1;
+}
+.lets-button {
+  margin-left: 20px;
+  margin-top: 30px;
+  text-align: center;
+  padding: 5px 20px;
+  width: 200px;
+  background-color: rgb(51, 153, 153);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+a:hover { color: #40414F; }
+
+
+/* 3. selfgpt */
+/* selfgpt > button */
+#text-button:hover{
+  background-color: rgb(15, 98, 98);
+}
+#text-button {
+  margin-top: 20px;
+  text-align: center;
+  padding: 5px 60px;
+  background-color: rgb(51, 153, 153);
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+/* selfgpt > question, result 칸*/
+#question, #answer {
+  margin-left: 35px;
+  margin-right: 35px;
+  width: 500px;
+  height: 300px;
+  outline-style: none;   
+  border: none;
+  resize: none;
+  outline: none;
+  margin-top: 7px;
+  border-radius: 1.5%;
+}
+.table {
+  display: table-cell;
+}
+.align {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+
+/* 4. signchatgpt */
+.signchatgpt{
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* signchatgpt button */
+.inquiry {
+  margin: 10px;
+}
+#bottom-button:hover{
+  background-color: rgb(15, 98, 98);
+}
+#bottom-button {
+  margin-top: 20px;
+  margin-left: 10px;
+  text-align: center;
+  padding: 5px 15px;
+  background-color: rgb(51, 153, 153);
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 100%;
+}
+#delete-button {
+  text-align: center;
+  padding: 5px 15px;
+  /* background-color: #E5E5E5; */
+  background-color: #40414F;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#search-file {
+  color: #ECECF1;
+  width: 55%;
+}
+.test {
+  display: table;
+  margin-bottom: 20px;
+}
+input[type=file]::file-selector-button{
+  height: 32px;
+  color: #808080;
+  background: #fdfdfd;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.delete-button{
+  height: 32px;
+  color: #808080;
+  background: #fdfdfd;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background: rgb(77,77,77);
+    color: #fff;
+  }
+}
+/* content */
+.signlanguageform {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  text-align: center;
+}
+.filebox input[type="file"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+.filebox {
+  padding: 10px;
+}
+.filebox .upload-name {
+  width: 50%;
+  border: 1px solid;
+  border-radius: 8px;
+  border-width: none;
+  border-color: #E0E0E0;
+  font-size: 16px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 2px #E0E0E0;
+  color: #808080;
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+.filebox label {
+  border: 2px solid #E0E0E0;
+  background: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px;
+}
+.filebox label:hover {
+  background-color: #E0E0E0;
+}
+/* buttons */
+.deletefile {
+  color: black;
+  border: 2px solid #E0E0E0;
+  background: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px;
+}
+label {
+  color: black;
+  cursor: pointer; 
+}
+.add-submit input[type="submit"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+.add-submit label {
+  border: 2px solid #E0E0E0;
+  background: none;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 5px;
+}
+.add-submit label:hover {
+  background-color: #E0E0E0;
+}
+/* reset button */
+.text-button {
+  font-size: 16px;
+  border: 2px solid #E0E0E0;
+  background: none;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.text-button:hover {
+  background-color: #E0E0E0;
+}
